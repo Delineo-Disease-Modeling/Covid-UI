@@ -1,0 +1,23 @@
+delineo: 
+  name: Delineo Disease Modeling Project
+  origin: Johns Hopkins University
+  enabled: true 
+  imageURL: ghcr.io/ehong-sun/covid-ui-connector/covid-ui-connector:0.0.1
+  metaURLs: 
+    code: https://github.com/Ehong-Sun/Covid-UI-Connector.git
+    website: https://covidweb.isi.jhu.edu/
+  description: |
+    The Delineo Simulator attempts to realistically capture the mechanisms of disease spread within a diverse range of 
+    geographies, ranging from small rural communities to large cities. The simulator works in two parts. Fundamentally, 
+    the question of disease movement is a question of population movement. Using geolocation mobility data from SafeGraph,
+    realistic population movement dynamics are created. Then, a statistical disease driver uses the population movement 
+    information to predict disease spread.
+  supportedParameters: # Delete parameters (as supplied in the input schema) that your model connector does not support
+    - interventionStrategies
+    #- contactReduction
+    #- r0
+  supportedRegions: # List regions and subregions (as described in the input schema) that your model connector supports
+    US:
+      - US-OK # If the connector supports both the top-level region and some subregions, you must explicitly repeat the top-level region in the array
+    IE: [] # As a convenience, you can use a missing value if the connector only supports the top-level region
+    CA: [] # Or an empty array
