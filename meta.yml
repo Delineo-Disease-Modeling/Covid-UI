@@ -2,9 +2,9 @@ delineo:
   name: Delineo Disease Modeling Project
   origin: Johns Hopkins University
   enabled: true 
-  imageURL: ghcr.io/ehong-sun/covid-ui-connector/covid-ui-connector:0.0.1
+  imageURL: ghcr.io/delineo-disease-modeling/covid-ui/covid-ui:0.0.1
   metaURLs: 
-    code: https://github.com/Ehong-Sun/Covid-UI-Connector.git
+    code: https://github.com/Delineo-Disease-Modeling/Covid-UI.git
     website: https://covidweb.isi.jhu.edu/
   description: |
     The Delineo Simulator attempts to realistically capture the mechanisms of disease spread within a diverse range of 
